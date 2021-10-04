@@ -13,7 +13,7 @@ name: Docker-Compose-Django-App
 on:
   push:
     branches:
-      - main
+      - master
  
 jobs:
    Remote_ssh_delete_old_docker_imagescontainers:
