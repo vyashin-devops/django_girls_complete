@@ -1,0 +1,56 @@
+#----------------------------------------------------------------------------------------------------------------------
+# GitHub Action Workflow to build copy Dockerfiles and Docker-Compose to EC2 Instance and run docker-compoce.yml file
+# Copy to EC2, I do it through GIT CLONE on EC2 Instance
+#
+# Version      Date        Info
+# 1.0          2021        Initial Version
+#
+# Made by Vyacheslav Yashin Copyleft (c)  2021 
+#----------------------------------------------------------------------------------------------------------------------
+
+name: Docker-Compose-Django-App
+
+on:
+  push:
+    branches:
+      - main
+ 
+jobs:
+   Remote_ssh_delete_old_docker_imagescontainers:
+    runs-on: ubuntu-latest
+    needs: []
+    steps:
+    
+      - name: First executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@master
+        continue-on-error: true
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+#         port: ${{ secrets.PORT }}
+          script: docker rm -f $(docker ps -a -q) && docker rmi $(docker images -q)
+          
+      - name: Second executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@master
+        continue-on-error: true
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+#         port: ${{ secrets.PORT }}
+          script: cd && rm -rf django_girls_complete    
+   
+   Remote_ssh_commands_build_up_docker_compose:
+     runs-on: ubuntu-latest
+     needs: [Remote_ssh_delete_old_docker_imagescontainers]
+     steps:
+      - name: Start Build and Up Docker-Compose
+        uses: appleboy/ssh-action@master
+        #continue-on-error: true
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+#         port: ${{ secrets.PORT }}
+          script: git clone https://github.com/vyashin-devops/django_girls_complete.git && cd DockerComposePython && docker-compose build && docker-compose up -d
