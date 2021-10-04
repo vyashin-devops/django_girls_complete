@@ -5,7 +5,6 @@ This repository contains the code that one would eventually have were they to go
 Status of Last Deployment:<br>
 <img src="https://github.com/vyashin-devops/django_girls_complet/workflows/Docker-Compose-Django-App/badge.svg?branch=master"><br>
 
-
 Copyleft by Vyacheslav Yashin 2021
 
 <font size="10" color="green" face="Tahoma">Django Girls Complet</font> <br>
