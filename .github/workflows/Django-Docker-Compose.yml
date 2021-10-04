@@ -39,7 +39,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
 #         port: ${{ secrets.PORT }}
-          script: cd && rm -rf django_girls_complete    
+          script: rm -rf *  
    
    Remote_ssh_commands_build_up_docker_compose:
      runs-on: ubuntu-latest
