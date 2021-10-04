@@ -3,7 +3,7 @@
 This repository contains the code that one would eventually have were they to go through the [Django Girls tutorial](https://tutorial.djangogirls.org/en/).
 
 Status of Last Deployment:<br>
-<img src="https://github.com/vyashin-devops/django_girls_complet/workflows/Docker-Compose-Django-App/badge.svg?branch=master"><br>
+<img src="https://github.com/vyashin-devops/django_girls_complete.git/workflows/Docker-Compose-Django-App/badge.svg?branch=master"><br>
 
 Copyleft by Vyacheslav Yashin 2021
 
