@@ -53,4 +53,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
 #         port: ${{ secrets.PORT }}
-          script: git clone https://github.com/vyashin-devops/django_girls_complete.git && cd DockerComposePython && docker-compose build && docker-compose up -d
+          script: git clone https://github.com/vyashin-devops/django_girls_complete.git && cd django_girls_complete && docker-compose build && docker-compose up -d
