@@ -1,7 +1,5 @@
 # Complete Django Girls Tutorial
 
-This repository contains the code that one would eventually have were they to go through the [Django Girls tutorial](https://tutorial.djangogirls.org/en/).
-
 Status of Last Deployment:<br>
 <img src="https://github.com/vyashin-devops/django_girls_complete.git/workflows/Docker-Compose-Django-App/badge.svg?branch=master"><br>
 
@@ -10,6 +8,8 @@ Copyleft by Vyacheslav Yashin 2021
 <font size="10" color="green" face="Tahoma">Django Girls Complet</font> <br>
 
 ## Differences
+
+This repository contains the code that one would eventually have were they to go through the [Django Girls tutorial](https://tutorial.djangogirls.org/en/).
 
 Expressing my authorial rights, some things are a bit different from the tutorial:
 
