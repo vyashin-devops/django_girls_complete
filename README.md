@@ -1,5 +1,4 @@
 # Complete Django Girls Tutorial
-#
 
 Status of Last Deployment:<br>
 <img src="https://github.com/vyashin-devops/django_girls_complete.git/workflows/Docker-Compose-Django-App/badge.svg?branch=master"><br>
