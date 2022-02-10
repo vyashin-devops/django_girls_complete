@@ -1,11 +1,12 @@
-# Complete Django Girls Tutorial
+## Complete Django Girls Tutorial
 
 
 Status of Last Deployment:<br>
-<img src="https://github.com/vyashin-devops/django_girls_complete.git/workflows/Docker-Compose-Django-App/badge.svg?branch=master"><br>
+<img src="https://github.com/vyashin-devops/django_girls_complete/workflows/Docker-Compose-Django-App/badge.svg?branch=master"><br>
 
 Copyleft by Vyacheslav Yashin 2021
-
+<br>
+***
 <font size="10" color="green" face="Tahoma">Django Girls Complet</font> <br>
 
 ## Differences
