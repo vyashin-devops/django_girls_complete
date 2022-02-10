@@ -1,6 +1,6 @@
 ## Complete Django Girls test GitHub Actions
 Test CI/CD in this project on Github Actions workflow. A complete project based on the @djangogirls - [tutorial](https://tutorial.djangogirls.org/)
-<br>
+<br><br>
 Status of Last Deployment:<br>
 <img src="https://github.com/vyashin-devops/django_girls_complete/workflows/Docker-Compose-Django-App/badge.svg?branch=master"><br>
 
